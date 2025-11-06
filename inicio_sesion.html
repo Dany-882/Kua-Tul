@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #50c9c3);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Contenedor del formulario */
+        .login-container {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        /* Título */
+        .login-container h2 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+
+       
+
+
+        /* Campos de entrada */
+        .login-container input[type="text"],
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        /* Efecto al hacer clic en el campo */
+        .login-container input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        /* Botón de inicio de sesión */
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+   <div class="login-container">
+        <!-- 🔹 Aquí agregas la imagen -->
+        <div class="imagen-superior">
+            <img src="iconwaggly.jpeg" alt="Logo o imagen de inicio">
+        </div>
+
+        .login-container button:hover {
+            background-color: #357ab7;
+        }
+
+        /* Enlace inferior */
+        .login-container .extra-links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container .extra-links a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .login-container .extra-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="post">
+            <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="extra-links">
+            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <p><a href="crear_cuenta.html">Crear una nueva cuenta</a></p>
+        </div>
+    </div>
+</body>
+</html>
